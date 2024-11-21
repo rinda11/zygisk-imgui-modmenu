@@ -3,6 +3,6 @@
 
 // TODO: change this
 #define TargetLibName "libil2cpp.so"
-#define GamePackageName "com.game.packagename"
+#define GamePackageName "zombie.survival.craft.z"
 
 #endif //ZYGISK_IMGUI_MODMENU_GAME_H
