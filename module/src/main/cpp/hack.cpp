@@ -345,7 +345,7 @@ EGLBoolean hook_eglSwapBuffers(EGLDisplay dpy, EGLSurface surface) {
     ImGui::NewFrame();
     ImGui::SetNextWindowSize(ImVec2(700, 500), ImGuiCond_FirstUseEver);
     ImGui::SetNextWindowSizeConstraints(ImVec2(400, 300), ImVec2(1000, 800));
-    if (ImGui::Begin(OBFUSCATE("Last Day on Earth v1.29.2 [64] | RindaModz"), nullptr)) {
+    if (ImGui::Begin("Last Day on Earth v1.29.2 [64] | RindaModz", nullptr)) {
     float menuWidth = ImGui::GetWindowWidth();
     float menuHeight = ImGui::GetWindowHeight();
 
@@ -367,64 +367,64 @@ EGLBoolean hook_eglSwapBuffers(EGLDisplay dpy, EGLSurface surface) {
     ImGui::SetColumnOffset(1, 150); // Offset kolom kedua
 
     static int tab = 1;
-    if (ImGui::Button(OBFUSCATE("Player"), ImVec2(-1, 60))) tab = 1;
-    if (ImGui::Button(OBFUSCATE("Resour"), ImVec2(-1, 60))) tab = 2;
-    if (ImGui::Button(OBFUSCATE("Unlock"), ImVec2(-1, 60))) tab = 3;
-    if (ImGui::Button(OBFUSCATE("Camera"), ImVec2(-1, 60))) tab = 4;
-    if (ImGui::Button(OBFUSCATE("Info"), ImVec2(-1, 60))) tab = 5;
+    if (ImGui::Button("Player", ImVec2(-1, 60))) tab = 1;
+    if (ImGui::Button("Resour", ImVec2(-1, 60))) tab = 2;
+    if (ImGui::Button("Unlock", ImVec2(-1, 60))) tab = 3;
+    if (ImGui::Button("Camera", ImVec2(-1, 60))) tab = 4;
+    if (ImGui::Button("Info", ImVec2(-1, 60))) tab = 5;
 
     ImGui::NextColumn();
 
     // Konten tab disesuaikan
     if (tab == 1) {
-        ImGui::Text(OBFUSCATE("Player Menu"));
+        ImGui::Text("Player Menu");
         ImGui::Separator();
-        ImGui::Checkbox(OBFUSCATE("One Hit"), &onehitt);
-        ImGui::Checkbox(OBFUSCATE("Fast Loot"), &fastloott);
-        ImGui::Checkbox(OBFUSCATE("Fast Travel"), &fasttravell);
-        ImGui::Checkbox(OBFUSCATE("Dumb Enemy"), &dumbenemy);
+        ImGui::Checkbox("One Hit", &onehitt);
+        ImGui::Checkbox("Fast Loot", &fastloott);
+        ImGui::Checkbox("Fast Travel", &fasttravell);
+        ImGui::Checkbox("Dumb Enemy", &dumbenemy);
         ImGui::Separator();
-        ImGui::SliderFloat(OBFUSCATE("Player Speed"), &playerspeedd, 0.0f, 15.0f, OBFUSCATE("%.3f"));
+        ImGui::SliderFloat("Player Speed", &playerspeedd, 0.0f, 15.0f, "%.3f");
         ImGui::Separator();
-        ImGui::Checkbox(OBFUSCATE("Attack Speed"), &attackspedd);
-        ImGui::Checkbox(OBFUSCATE("Max Durability"), &maxduraaa);
+        ImGui::Checkbox("Attack Speed", &attackspedd);
+        ImGui::Checkbox("Max Durability", &maxduraaa);
         ImGui::Separator();
     } else if (tab == 2) {
-        ImGui::Text(OBFUSCATE("Resource Menu"));
+        ImGui::Text("Resource Menu");
         ImGui::Separator();
-        ImGui::Checkbox(OBFUSCATE("Free Craft"), &freecraft);
-        ImGui::Checkbox(OBFUSCATE("Inbox +999"), &shopInboxx);
-        ImGui::Checkbox(OBFUSCATE("Instant Build (Fiew Item)"), &instantbuild);
-        ImGui::Checkbox(OBFUSCATE("Free split (split to get more)"), &freesplitt);
-        ImGui::Checkbox(OBFUSCATE("Unlimited Item & Food & Water"), &unliifood);
+        ImGui::Checkbox("Free Craft", &freecraft);
+        ImGui::Checkbox("Inbox +999", &shopInboxx);
+        ImGui::Checkbox("Instant Build (Fiew Item)", &instantbuild);
+        ImGui::Checkbox("Free split (split to get more)", &freesplitt);
+        ImGui::Checkbox("Unlimited Item & Food & Water", &unliifood);
         ImGui::Separator();
-        ImGui::Checkbox(OBFUSCATE("No Level Skill Requirement"), &levelskilll);
+        ImGui::Checkbox("No Level Skill Requirement", &levelskilll);
         ImGui::Separator();
     } else if (tab == 3) {
-        ImGui::Text(OBFUSCATE("Unlock Menu"));
+        ImGui::Text("Unlock Menu");
         ImGui::Separator();
-        ImGui::Checkbox(OBFUSCATE("Unlock All Skin"), &allskiin);
-        ImGui::Checkbox(OBFUSCATE("Unlock Bike Skin"), &bikeskinn);
-        ImGui::Checkbox(OBFUSCATE("Unlock Weapon Modify"), &weaponmfy);
-        ImGui::Checkbox(OBFUSCATE("unlock Global map(event)"), &globalmap);
+        ImGui::Checkbox("Unlock All Skin", &allskiin);
+        ImGui::Checkbox("Unlock Bike Skin", &bikeskinn);
+        ImGui::Checkbox("Unlock Weapon Modify", &weaponmfy);
+        ImGui::Checkbox("unlock Global map(event)", &globalmap);
         ImGui::Separator();
     } else if (tab == 4) {
-        ImGui::Text(OBFUSCATE("Camera Menu (Beta)"));
+        ImGui::Text("Camera Menu (Beta)");
         ImGui::Separator();
         //ImGui::SliderFloat(OBFUSCATE("Weapon View"), &weaponview, 0.0f, 15.0f, OBFUSCATE("value = %.3f"));
         ImGui::Separator();
     } else if (tab == 5) {
-        ImGui::Text(OBFUSCATE("Architecture : %s"), aarch);  
-        ImGui::Text(OBFUSCATE("FrameRate %.3f ms (%.1f FPS)"), 1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
+        ImGui::Text("Architecture : %s", aarch);  
+        ImGui::Text("FrameRate %.3f ms (%.1f FPS)", 1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
         ImGui::Separator();
          
-        ImGui::Text(OBFUSCATE("Modded by : Rinda"));
+        ImGui::Text("Modded by : Rinda");
         
-        ImGui::Text(OBFUSCATE("Telegram  : t.me/RindaMods"));
-        ImGui::Text(OBFUSCATE("Discord   : rinda_escobar"));
+        ImGui::Text("Telegram  : t.me/RindaMods");
+        ImGui::Text("Discord   : rinda_escobar");
         ImGui::Separator();
         
-        ImGui::Text(OBFUSCATE("Join Telegram Channel for More Update : https://t.me/RindaModz"));
+        ImGui::Text("Join Telegram Channel for More Update : https://t.me/RindaModz");
         ImGui::Separator();
      }
     ImGui::End(); 
