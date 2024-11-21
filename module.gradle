@@ -1,9 +1,9 @@
 ext {
     moduleLibraryName = "imgui_modmenu"
     magiskModuleId = "zygisk_imgui_modmenu"
-    moduleName = "ImGui ModMenu"
-    moduleAuthor = "AKNoryx28"
-    moduleDescription = "ImGui android menu."
+    moduleName = "LDOE Mod Menu"
+    moduleAuthor = "RindaMdz"
+    moduleDescription = "Last Day on Earth v1.29.2 [64]"
     moduleVersion = "v1.0.0"
     moduleVersionCode = 1
 }
