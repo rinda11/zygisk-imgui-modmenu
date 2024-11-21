@@ -16,7 +16,6 @@
 #include "imgui_impl_android.h"
 #include "imgui_impl_opengl3.h"
 #include "MemoryPatch.h"
-#include <Fonts/ShantellSans.h>
 #include <Fonts/FontAwesome6_regular.h>
 #include <Fonts/GoogleSans.h>
 
